@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Aprenda a se proteger de golpes digitais, especialmente no WhatsApp. Guia educativo completo com dicas de prevenção, identificação de fraudes e o que fazer se você foi vítima.">
+  <meta name="keywords"
+    content="golpes digitais, segurança digital, WhatsApp, prevenção de fraudes, golpes online, phishing">
+  <meta name="author" content="Escudo Digital">
+  <title>Pay Attention+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">🔒</span>
+        <span class="logo-text">Pay <span class="logo-accent">Attention</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#golpes" class="nav-link">Tipos de Golpes</a></li>
+        <li><a href="#prevencao" class="nav-link">Prevenção</a></li>
+        <li><a href="#quiz" class="nav-link">Teste seus Conhecimentos</a></li>
+        <li><a href="#caiu-golpe" class="nav-link">Caí num Golpe</a></li>
+        <li><a href="#recursos" class="nav-link">Recursos</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" data-animate="fade-up">
+          <span class="badge-dot"></span>
+          Educação em Segurança Digital
+        </div>
+        <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+          Não caia em <span class="gradient-text">golpes digitais.</span><br>
+          Aprenda a se <span class="gradient-text-2">proteger.</span>
+        </h1>
+        <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+          A cada <strong>6 segundos</strong>, um brasileiro é vítima de golpe digital.
+          Conheça as fraudes mais comuns no WhatsApp e na internet, aprenda a identificá-las
+          e saiba exatamente o que fazer se já caiu em uma.
+        </p>
+        <div class="hero-actions" data-animate="fade-up" data-delay="300">
+          <a href="#golpes" class="btn btn-primary">
+            <span>Conhecer os Golpes</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#quiz" class="btn btn-secondary">
+            <span>Fazer o Quiz</span>
+          </a>
+        </div>
+        <div class="hero-stats" data-animate="fade-up" data-delay="400">
+          <div class="stat">
+            <span class="stat-number" data-count="2.3">0</span><span class="stat-suffix">MI</span>
+            <span class="stat-label">Golpes em 2025</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="70">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Via WhatsApp</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-count="1.1">0</span><span class="stat-suffix">BI</span>
+            <span class="stat-label">Prejuízo em R$</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left" data-delay="200">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="whatsapp-header">
+              <div class="wa-avatar">👤</div>
+              <div class="wa-info">
+                <span class="wa-name">Banco Nacional ✓</span>
+                <span class="wa-status">online</span>
+              </div>
+            </div>
+            <div class="whatsapp-messages">
+              <div class="wa-msg wa-msg-received">
+                <p>⚠️ URGENTE: Detectamos uma compra suspeita no seu cartão de R$ 4.892,00. Para CANCELAR, clique no
+                  link abaixo:</p>
+                <span class="wa-time">09:14</span>
+              </div>
+              <div class="wa-msg wa-msg-received">
+                <p class="wa-link">🔗 seguranca-banco.com.br/verificar</p>
+                <span class="wa-time">09:14</span>
+              </div>
+              <div class="wa-msg wa-msg-received">
+                <p>Responda SIM para confirmar que é você ou seu cartão será BLOQUEADO em 30 minutos!</p>
+                <span class="wa-time">09:15</span>
+              </div>
+              <div class="scam-alert-overlay">
+                <div class="alert-icon">⚠️</div>
+                <span>ISSO É UM GOLPE!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" data-animate="fade-up" data-delay="600">
+      <span>Role para aprender</span>
+      <div class="scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14" />
+          <path d="m19 12-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIPOS DE GOLPES ===== -->
+  <section class="section golpes-section" id="golpes">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">⚡ Conheça as Ameaças</span>
+        <h2 class="section-title">Os golpes mais comuns<br><span class="gradient-text">no WhatsApp e na Internet</span>
+        </h2>
+        <p class="section-desc">Reconhecer é o primeiro passo para se proteger. Veja como os criminosos agem e aprenda a
+          identificar cada tipo de golpe.</p>
+      </div>
+
+      <div class="golpes-tabs" data-animate="fade-up" data-delay="100">
+        <button class="tab-btn active" data-tab="whatsapp">
+          <span class="tab-icon">💬</span> Golpes no WhatsApp
+        </button>
+        <button class="tab-btn" data-tab="internet">
+          <span class="tab-icon">🌐</span> Golpes na Internet
+        </button>
+        <button class="tab-btn" data-tab="telefone">
+          <span class="tab-icon">📞</span> Golpes por Telefone
+        </button>
+      </div>
+
+      <!-- WhatsApp Scams -->
+      <div class="tab-content active" id="tab-whatsapp">
+        <div class="golpes-grid">
+          <div class="golpe-card" data-animate="fade-up" data-delay="0">
+            <div class="golpe-card-icon" style="--card-color: #ff6b6b;">
+              <span>🔗</span>
+            </div>
+            <div class="golpe-danger">Alto Risco</div>
+            <h3 class="golpe-card-title">Clonagem de WhatsApp</h3>
+            <p class="golpe-card-desc">O golpista se passa por uma empresa e pede o código de verificação de 6 dígitos
+              enviado por SMS. Com isso, ele assume o controle da sua conta.</p>
+            <div class="golpe-card-example">
+              <span class="example-label">💬 Exemplo de mensagem:</span>
+              <p>"Olá! Somos do suporte do WhatsApp. Enviamos um código de 6 dígitos para confirmar sua conta. Poderia
+                informá-lo?"</p>
+            </div>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Pedem código de verificação do SMS</li>
+                <li>Dizem ser do "suporte" do WhatsApp</li>
+                <li>Urgência para enviar o código</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="golpe-card" data-animate="fade-up" data-delay="100">
+            <div class="golpe-card-icon" style="--card-color: #ffa94d;">
+              <span>👤</span>
+            </div>
+            <div class="golpe-danger">Muito Frequente</div>
+            <h3 class="golpe-card-title">Falso Parente/Amigo</h3>
+            <p class="golpe-card-desc">Golpista usa foto de alguém conhecido e diz que "trocou de número", pedindo
+              dinheiro emprestado com urgência via Pix.</p>
+            <div class="golpe-card-example">
+              <span class="example-label">💬 Exemplo de mensagem:</span>
+              <p>"Oi mãe, troquei de número! Estou precisando de um Pix urgente de R$ 800 pra pagar um boleto que vence
+                hoje. Me salva?"</p>
+            </div>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Número novo e desconhecido</li>
+                <li>Pedido de dinheiro urgente</li>
+                <li>Evita ligação de vídeo ou áudio</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="golpe-card" data-animate="fade-up" data-delay="200">
+            <div class="golpe-card-icon" style="--card-color: #845ef7;">
+              <span>🏦</span>
+            </div>
+            <div class="golpe-danger">Perigoso</div>
+            <h3 class="golpe-card-title">Falso Atendimento Bancário</h3>
+            <p class="golpe-card-desc">Criminosos se passam por bancos ou operadoras, alertando sobre "compras
+              suspeitas" e pedindo dados pessoais ou transferências.</p>
+            <div class="golpe-card-example">
+              <span class="example-label">💬 Exemplo de mensagem:</span>
+              <p>"Detectamos uma tentativa de compra de R$ 3.499 no seu cartão. Para cancelar, acesse:
+                banco-seguro.xyz/cancelar"</p>
+            </div>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Links com domínios estranhos</li>
+                <li>Pedem senhas ou dados do cartão</li>
+                <li>Tom alarmista e ameaçador</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="golpe-card" data-animate="fade-up" data-delay="300">
+            <div class="golpe-card-icon" style="--card-color: #20c997;">
+              <span>💰</span>
+            </div>
+            <div class="golpe-danger">Em Alta</div>
+            <h3 class="golpe-card-title">Falso Investimento / Renda Extra</h3>
+            <p class="golpe-card-desc">Prometem lucros absurdos com "tarefas simples" ou investimentos milagrosos. No
+              início podem até pagar, mas é uma pirâmide.</p>
+            <div class="golpe-card-example">
+              <span class="example-label">💬 Exemplo de mensagem:</span>
+              <p>"🔥 Ganhe R$ 500/dia avaliando produtos! Investimento inicial de apenas R$ 100 com retorno de 300% em
+                24h!"</p>
+            </div>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Lucros muito acima do mercado</li>
+                <li>Pedem "investimento inicial"</li>
+                <li>Depoimentos falsos com prints</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="golpe-card" data-animate="fade-up" data-delay="400">
+            <div class="golpe-card-icon" style="--card-color: #339af0;">
+              <span>🎁</span>
+            </div>
+            <div class="golpe-danger">Comum</div>
+            <h3 class="golpe-card-title">Falsa Promoção / Sorteio</h3>
+            <p class="golpe-card-desc">Links falsos que prometem prêmios, brindes ou descontos de grandes marcas. Ao
+              clicar, seus dados são roubados ou malware é instalado.</p>
+            <div class="golpe-card-example">
+              <span class="example-label">💬 Exemplo de mensagem:</span>
+              <p>"🎉 Parabéns! Você foi selecionado para ganhar um iPhone 16! Clique aqui para resgatar seu prêmio:
+                promo-apple.link/ganhe"</p>
+            </div>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Prêmios "bons demais pra ser verdade"</li>
+                <li>Pedem compartilhamento obrigatório</li>
+                <li>URL diferente do site oficial</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="golpe-card" data-animate="fade-up" data-delay="500">
+            <div class="golpe-card-icon" style="--card-color: #f06595;">
+              <span>💕</span>
+            </div>
+            <div class="golpe-danger">Crescente</div>
+            <h3 class="golpe-card-title">Golpe Sentimental</h3>
+            <p class="golpe-card-desc">Criminosos criam perfis falsos e iniciam relacionamentos virtuais, ganhando
+              confiança antes de pedir dinheiro com histórias emocionais.</p>
+            <div class="golpe-card-example">
+              <span class="example-label">💬 Exemplo de mensagem:</span>
+              <p>"Amor, estou preso no aeroporto e preciso de R$ 2.000 para liberar minha bagagem. Só confio em você pra
+                me ajudar..."</p>
+            </div>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Relacionamento 100% virtual</li>
+                <li>Histórias dramáticas para pedir dinheiro</li>
+                <li>Recusa em fazer videochamada</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Internet Scams -->
+      <div class="tab-content" id="tab-internet">
+        <div class="golpes-grid">
+          <div class="golpe-card" data-animate="fade-up">
+            <div class="golpe-card-icon" style="--card-color: #ff6b6b;">
+              <span>🎣</span>
+            </div>
+            <div class="golpe-danger">Alto Risco</div>
+            <h3 class="golpe-card-title">Phishing (E-mails Falsos)</h3>
+            <p class="golpe-card-desc">E-mails que imitam bancos, lojas e serviços conhecidos para roubar senhas e dados
+              bancários através de páginas falsas.</p>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Erros de português no e-mail</li>
+                <li>Remetente com domínio estranho</li>
+                <li>Link diferente ao passar o mouse</li>
+              </ul>
+            </div>
+          </div>
+          <div class="golpe-card" data-animate="fade-up" data-delay="100">
+            <div class="golpe-card-icon" style="--card-color: #ffa94d;">
+              <span>🛒</span>
+            </div>
+            <div class="golpe-danger">Muito Frequente</div>
+            <h3 class="golpe-card-title">Loja Virtual Falsa</h3>
+            <p class="golpe-card-desc">Sites que imitam grandes lojas com preços muito baixos. Após o pagamento
+              (geralmente via Pix), o produto nunca chega.</p>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Preços absurdamente baixos</li>
+                <li>Só aceita Pix ou boleto</li>
+                <li>Site sem CNPJ ou endereço real</li>
+              </ul>
+            </div>
+          </div>
+          <div class="golpe-card" data-animate="fade-up" data-delay="200">
+            <div class="golpe-card-icon" style="--card-color: #845ef7;">
+              <span>🔒</span>
+            </div>
+            <div class="golpe-danger">Perigoso</div>
+            <h3 class="golpe-card-title">Ransomware</h3>
+            <p class="golpe-card-desc">Software malicioso que bloqueia seus arquivos e exige pagamento (resgate) para
+              liberá-los. Geralmente vem por e-mail ou download.</p>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Anexos suspeitos em e-mails</li>
+                <li>Downloads de sites não confiáveis</li>
+                <li>Programas "crackeados"</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Scams -->
+      <div class="tab-content" id="tab-telefone">
+        <div class="golpes-grid">
+          <div class="golpe-card" data-animate="fade-up">
+            <div class="golpe-card-icon" style="--card-color: #ff6b6b;">
+              <span>📱</span>
+            </div>
+            <div class="golpe-danger">Frequente</div>
+            <h3 class="golpe-card-title">Falsa Central Telefônica</h3>
+            <p class="golpe-card-desc">Ligam dizendo ser do banco, informam uma "compra suspeita" e pedem seus dados ou
+              que instale um app de "segurança" (acesso remoto).</p>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Pedem senha por telefone</li>
+                <li>Solicitam instalação de app</li>
+                <li>Tom de urgência extrema</li>
+              </ul>
+            </div>
+          </div>
+          <div class="golpe-card" data-animate="fade-up" data-delay="100">
+            <div class="golpe-card-icon" style="--card-color: #20c997;">
+              <span>📦</span>
+            </div>
+            <div class="golpe-danger">Em Alta</div>
+            <h3 class="golpe-card-title">Falsa Encomenda / Correios</h3>
+            <p class="golpe-card-desc">SMS ou ligação dizendo que há uma encomenda retida e que você precisa pagar uma
+              taxa. Direciona para sites falsos dos Correios.</p>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>SMS com links encurtados</li>
+                <li>Taxas que não existem</li>
+                <li>Não informa código de rastreio real</li>
+              </ul>
+            </div>
+          </div>
+          <div class="golpe-card" data-animate="fade-up" data-delay="200">
+            <div class="golpe-card-icon" style="--card-color: #339af0;">
+              <span>⚖️</span>
+            </div>
+            <div class="golpe-danger">Perigoso</div>
+            <h3 class="golpe-card-title">Falso Processo Judicial</h3>
+            <p class="golpe-card-desc">Ligação ameaçando com processo judicial, mandado de prisão ou dívida inexistente,
+              pressionando para pagamento imediato.</p>
+            <div class="golpe-card-signs">
+              <span class="sign-title">🚩 Sinais de alerta:</span>
+              <ul>
+                <li>Ameaça de prisão imediata</li>
+                <li>Pressão para pagar na hora</li>
+                <li>Justiça nunca liga cobrando</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREVENÇÃO ===== -->
+  <section class="section prevencao-section" id="prevencao">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">🔒 Blindagem Digital</span>
+        <h2 class="section-title">Como se proteger<br><span class="gradient-text-2">dos golpes digitais</span></h2>
+        <p class="section-desc">Siga estas práticas essenciais e torne-se quase invulnerável aos golpistas.</p>
+      </div>
+
+      <div class="prevention-grid">
+        <div class="prevention-card prevention-card-featured" data-animate="fade-up">
+          <div class="prevention-number">01</div>
+          <div class="prevention-icon">🔐</div>
+          <h3>Ative a Verificação em Duas Etapas</h3>
+          <p>No WhatsApp: <strong>Configurações → Conta → Confirmação em duas etapas</strong>. Crie um PIN de 6 dígitos.
+            Esta é a sua principal defesa contra clonagem.</p>
+          <div class="prevention-steps">
+            <div class="step">
+              <span class="step-num">1</span>
+              <span>Abra o WhatsApp</span>
+            </div>
+            <div class="step">
+              <span class="step-num">2</span>
+              <span>Vá em Configurações</span>
+            </div>
+            <div class="step">
+              <span class="step-num">3</span>
+              <span>Conta → Confirmação em duas etapas</span>
+            </div>
+            <div class="step">
+              <span class="step-num">4</span>
+              <span>Crie um PIN forte</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="prevention-card" data-animate="fade-up" data-delay="100">
+          <div class="prevention-number">02</div>
+          <div class="prevention-icon">🔗</div>
+          <h3>Nunca Clique em Links Suspeitos</h3>
+          <p>Desconfie de links encurtados, promoções mirabolantes e mensagens urgentes. Na dúvida, acesse o site
+            oficial digitando o endereço no navegador.</p>
+        </div>
+
+        <div class="prevention-card" data-animate="fade-up" data-delay="200">
+          <div class="prevention-number">03</div>
+          <div class="prevention-icon">📞</div>
+          <h3>Confirme por Outro Canal</h3>
+          <p>Se alguém pedir dinheiro pelo WhatsApp, ligue para o número antigo da pessoa ou faça uma videochamada antes
+            de transferir qualquer valor.</p>
+        </div>
+
+        <div class="prevention-card" data-animate="fade-up" data-delay="100">
+          <div class="prevention-number">04</div>
+          <div class="prevention-icon">🔑</div>
+          <h3>Use Senhas Fortes e Únicas</h3>
+          <p>Nunca reutilize senhas. Use um gerenciador como Bitwarden (grátis) e crie senhas com letras, números e
+            símbolos. Ative 2FA em tudo.</p>
+        </div>
+
+        <div class="prevention-card" data-animate="fade-up" data-delay="200">
+          <div class="prevention-number">05</div>
+          <div class="prevention-icon">🏦</div>
+          <h3>Bancos Nunca Pedem Dados</h3>
+          <p>Nenhum banco pede senha, código ou Pix por telefone, SMS ou WhatsApp. Se receber esse tipo de contato,
+            desligue e ligue para o banco pelo número oficial.</p>
+        </div>
+
+        <div class="prevention-card" data-animate="fade-up" data-delay="300">
+          <div class="prevention-number">06</div>
+          <div class="prevention-icon">👁️</div>
+          <h3>Proteja sua Privacidade</h3>
+          <p>No WhatsApp, configure a foto de perfil para "Meus contatos". Evite expor dados pessoais em redes sociais.
+            Quanto menos informação pública, mais seguro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIMULADOR / QUIZ ===== -->
+  <section class="section quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">🧠 Teste Interativo</span>
+        <h2 class="section-title">Você sabe identificar<br><span class="gradient-text">um golpe digital?</span></h2>
+        <p class="section-desc">Analise cada situação e diga se é um golpe real ou uma mensagem legítima. Veja se você
+          está preparado!</p>
+      </div>
+
+      <div class="quiz-container" data-animate="fade-up" data-delay="100">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quizProgressBar"></div>
+          <span class="quiz-progress-text" id="quizProgressText">Pergunta 1 de 8</span>
+        </div>
+
+        <div class="quiz-card" id="quizCard">
+          <div class="quiz-scenario" id="quizScenario">
+            <!-- Filled by JS -->
+          </div>
+          <div class="quiz-message" id="quizMessage">
+            <!-- Filled by JS -->
+          </div>
+          <div class="quiz-options" id="quizOptions">
+            <!-- Filled by JS -->
+          </div>
+          <div class="quiz-feedback" id="quizFeedback">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <div class="quiz-result hidden" id="quizResult">
+          <div class="result-icon" id="resultIcon"></div>
+          <h3 class="result-title" id="resultTitle"></h3>
+          <p class="result-desc" id="resultDesc"></p>
+          <div class="result-score">
+            <div class="score-circle" id="scoreCircle">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="54" class="score-bg" />
+                <circle cx="60" cy="60" r="54" class="score-fill" id="scoreFill" />
+              </svg>
+              <span class="score-text" id="scoreText">0%</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="quizRestart">
+            <span>Tentar Novamente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAIU NO GOLPE? ===== -->
+  <section class="section socorro-section" id="caiu-golpe">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">🆘 Plano de Emergência</span>
+        <h2 class="section-title">Caí num golpe.<br><span class="gradient-text-danger">E agora?</span></h2>
+        <p class="section-desc">Respire fundo. Quanto mais rápido agir, maiores as chances de recuperar seu dinheiro e
+          proteger seus dados. Siga este passo a passo:</p>
+      </div>
+
+      <div class="timeline" data-animate="fade-up" data-delay="100">
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-step">1</span>
+            <span class="timeline-time">⏱️ Imediatamente</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Bloqueie Tudo</h3>
+            <ul class="action-list">
+              <li>
+                <span class="action-icon">💳</span>
+                <div>
+                  <strong>Cartão comprometido?</strong>
+                  <p>Ligue imediatamente para seu banco e solicite o bloqueio do cartão e da conta se necessário.</p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">📱</span>
+                <div>
+                  <strong>WhatsApp clonado?</strong>
+                  <p>Envie e-mail para <code>support@whatsapp.com</code> com assunto "Perda/Roubo: desativar minha
+                    conta" e seu número com DDI (+55...).</p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">🔑</span>
+                <div>
+                  <strong>Senha exposta?</strong>
+                  <p>Troque imediatamente a senha de todos os serviços onde você usa a mesma senha (e-mail, redes
+                    sociais, bancos).</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-step">2</span>
+            <span class="timeline-time">⏱️ Em até 30 minutos</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Registre Tudo</h3>
+            <ul class="action-list">
+              <li>
+                <span class="action-icon">📸</span>
+                <div>
+                  <strong>Tire prints de tudo</strong>
+                  <p>Conversas, comprovantes de transferência, links, perfis — tudo pode ser evidência. Não apague nada!
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">📋</span>
+                <div>
+                  <strong>Anote detalhes</strong>
+                  <p>Horário, valores transferidos, dados da conta destino (Pix, banco, nome), número de telefone usado
+                    pelo golpista.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-step">3</span>
+            <span class="timeline-time">⏱️ Em até 1 hora</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Acione os Canais Oficiais</h3>
+            <ul class="action-list">
+              <li>
+                <span class="action-icon">🏦</span>
+                <div>
+                  <strong>Mecanismo Especial de Devolução (MED)</strong>
+                  <p>Se fez Pix, peça ao seu banco para acionar o MED do Banco Central. Você tem até 80 dias, mas quanto
+                    antes melhor!</p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">📝</span>
+                <div>
+                  <strong>Boletim de Ocorrência (B.O.)</strong>
+                  <p>Registre online na Delegacia Virtual do seu estado. É gratuito e pode ser feito de casa. Essencial
+                    para processos futuros.</p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">🛡️</span>
+                <div>
+                  <strong>Procon e Consumidor.gov.br</strong>
+                  <p>Se o golpe envolveu uma empresa ou plataforma, registre reclamação para pressionar a resolução.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <span class="timeline-step">4</span>
+            <span class="timeline-time">⏱️ Nos próximos dias</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Reforce sua Segurança</h3>
+            <ul class="action-list">
+              <li>
+                <span class="action-icon">🔐</span>
+                <div>
+                  <strong>Troque TODAS as senhas</strong>
+                  <p>Comece pelo e-mail principal, depois bancos e redes sociais. Ative verificação em duas etapas em
+                    tudo.</p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">📊</span>
+                <div>
+                  <strong>Monitore seu CPF</strong>
+                  <p>Cadastre-se no Registrato do Banco Central para verificar contas abertas em seu nome. Use o
+                    SPC/Serasa para monitorar.</p>
+                </div>
+              </li>
+              <li>
+                <span class="action-icon">📢</span>
+                <div>
+                  <strong>Avise seus contatos</strong>
+                  <p>Se seu WhatsApp foi clonado, avise amigos e família imediatamente para que não caiam no golpe
+                    também.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RECURSOS E CONTATOS ===== -->
+  <section class="section recursos-section" id="recursos">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">📚 Canais Úteis</span>
+        <h2 class="section-title">Recursos e contatos<br><span class="gradient-text-2">importantes</span></h2>
+        <p class="section-desc">Tenha sempre à mão os canais oficiais para denúncia e apoio.</p>
+      </div>
+
+      <div class="recursos-grid" data-animate="fade-up" data-delay="100">
+        <div class="recurso-card">
+          <div class="recurso-icon">🚔</div>
+          <h3>Delegacia Virtual</h3>
+          <p>Registre Boletim de Ocorrência online, sem sair de casa. Disponível em todos os estados.</p>
+          <span class="recurso-link">delegaciavirtual.sinesp.gov.br</span>
+        </div>
+        <div class="recurso-card">
+          <div class="recurso-icon">🏛️</div>
+          <h3>Banco Central - Registrato</h3>
+          <p>Consulte gratuitamente se existem contas, empréstimos ou chaves Pix no seu CPF.</p>
+          <span class="recurso-link">registrato.bcb.gov.br</span>
+        </div>
+        <div class="recurso-card">
+          <div class="recurso-icon">📞</div>
+          <h3>Disque 181</h3>
+          <p>Disque-denúncia anônimo. Funciona 24h para denunciar crimes, incluindo golpes digitais.</p>
+          <span class="recurso-link">Ligue: 181</span>
+        </div>
+        <div class="recurso-card">
+          <div class="recurso-icon">🛡️</div>
+          <h3>CERT.br</h3>
+          <p>Centro de Estudos para Resposta a Incidentes de Segurança. Cartilhas e alertas sobre segurança.</p>
+          <span class="recurso-link">cert.br</span>
+        </div>
+        <div class="recurso-card">
+          <div class="recurso-icon">⚖️</div>
+          <h3>Procon</h3>
+          <p>Órgão de defesa do consumidor. Registre reclamações contra empresas envolvidas em golpes.</p>
+          <span class="recurso-link">consumidor.gov.br</span>
+        </div>
+        <div class="recurso-card">
+          <div class="recurso-icon">📧</div>
+          <h3>Suporte WhatsApp</h3>
+          <p>Para desativar conta clonada ou reportar números, envie e-mail com seus dados.</p>
+          <span class="recurso-link">support@whatsapp.com</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">🔒</span>
+          <span class="logo-text">Pay<span class="logo-accent">Attention</span></span>
+          <p class="footer-desc">Educação em segurança digital para todos os brasileiros. Compartilhe este site com quem
+            você ama.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <a href="#golpes">Tipos de Golpes</a>
+          <a href="#prevencao">Prevenção</a>
+          <a href="#quiz">Quiz Interativo</a>
+          <a href="#caiu-golpe">Caí num Golpe</a>
+          <a href="#recursos">Recursos</a>
+        </div>
+        <div class="footer-share">
+          <h4>Compartilhe</h4>
+          <p>Ajude a proteger mais pessoas compartilhando este conteúdo educativo.</p>
+          <div class="share-buttons">
+            <button class="share-btn" id="shareWhatsApp" aria-label="Compartilhar no WhatsApp">💬 WhatsApp</button>
+            <button class="share-btn" id="shareCopy" aria-label="Copiar link">📋 Copiar Link</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Pay Attention — Projeto educativo sem fins lucrativos. Feito com 💚 para proteger o Brasil.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
